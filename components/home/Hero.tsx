@@ -7,15 +7,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "https://images.pexels.com/photos/110867/pexels-photo-110867.jpeg",
+    image: "https://www.livemint.com/lm-img/img/2023/06/30/600x338/monsoon_1688086558783_1688086559132.jpg",
     alt: "Flooded street with an auto-rickshaw",
   },
   {
-    image: "https://images.pexels.com/photos/1608738/pexels-photo-1608738.jpeg",
-    alt: "Construction site with road maintenance",
+    image: "https://5.imimg.com/data5/SELLER/Default/2024/2/382672170/YZ/ZN/AU/2903823/street-light-maintenance-services-500x500.jpg",
+    alt: "Broken Street Light",
   },
   {
-    image: "https://images.pexels.com/photos/5695699/pexels-photo-5695699.jpeg",
+    image: "https://bobsbanter.com/wp-content/uploads/2021/11/potholes.jpg",
     alt: "Road with potholes and damage",
   },
 ];

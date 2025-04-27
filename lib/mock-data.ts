@@ -46,37 +46,37 @@ export const issueTypes: IssueType[] = [
   { 
     id: '1', 
     name: 'Pothole',
-    defaultImage: 'https://images.pexels.com/photos/2369465/pexels-photo-2369465.jpeg'
+    defaultImage: 'https://bobsbanter.com/wp-content/uploads/2021/11/potholes.jpg'
   },
   { 
     id: '2', 
     name: 'Street Light Outage',
-    defaultImage: 'https://images.pexels.com/photos/691412/pexels-photo-691412.jpeg'
+    defaultImage: 'https://5.imimg.com/data5/SELLER/Default/2024/2/382672170/YZ/ZN/AU/2903823/street-light-maintenance-services-500x500.jpg'
   },
   { 
     id: '3', 
     name: 'Garbage Dump',
-    defaultImage: 'https://images.pexels.com/photos/2768961/pexels-photo-2768961.jpeg'
+    defaultImage: 'https://static.toiimg.com/thumb/msid-66857641,width-1280,height-720,resizemode-72/66857641.jpg'
   },
   { 
     id: '4', 
     name: 'Water Logging',
-    defaultImage: 'https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg'
+    defaultImage: 'https://www.livemint.com/lm-img/img/2023/06/30/600x338/monsoon_1688086558783_1688086559132.jpg'
   },
   { 
     id: '5', 
     name: 'Broken Sidewalk',
-    defaultImage: 'https://images.pexels.com/photos/5699705/pexels-photo-5699705.jpeg'
+    defaultImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ugnJ_HEYaSAEYlhBiU6BbFZsynyW5xGKlA&s'
   },
   {
     id: '6',
     name: 'Traffic Signal Issue',
-    defaultImage: 'https://images.pexels.com/photos/1727828/pexels-photo-1727828.jpeg'
+    defaultImage: 'https://www.shutterstock.com/image-photo/broken-traffic-light-signals-showing-600nw-2387991893.jpg'
   },
   {
     id: '7',
     name: 'Road Damage',
-    defaultImage: 'https://images.pexels.com/photos/5695699/pexels-photo-5695699.jpeg'
+    defaultImage: 'https://media.istockphoto.com/id/538686713/photo/cracked-asphalt-after-earthquake.jpg?s=612x612&w=0&k=20&c=SbzwfmL_xf0rgZ4spkJPZ6wD6tR4AzkYEeA5iyg-_u4='
   }
 ];
 
@@ -100,7 +100,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/2369465/pexels-photo-2369465.jpeg',
+      'https://bobsbanter.com/wp-content/uploads/2021/11/potholes.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -124,7 +124,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/691412/pexels-photo-691412.jpeg',
+      'https://5.imimg.com/data5/SELLER/Default/2024/2/382672170/YZ/ZN/AU/2903823/street-light-maintenance-services-500x500.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -148,7 +148,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/2768961/pexels-photo-2768961.jpeg',
+      'https://static.toiimg.com/thumb/msid-66857641,width-1280,height-720,resizemode-72/66857641.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -173,7 +173,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg',
+      'https://www.livemint.com/lm-img/img/2023/06/30/600x338/monsoon_1688086558783_1688086559132.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -197,7 +197,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/5699705/pexels-photo-5699705.jpeg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ugnJ_HEYaSAEYlhBiU6BbFZsynyW5xGKlA&s',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -221,7 +221,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/5699764/pexels-photo-5699764.jpeg',
+      'https://media.istockphoto.com/id/538686713/photo/cracked-asphalt-after-earthquake.jpg?s=612x612&w=0&k=20&c=SbzwfmL_xf0rgZ4spkJPZ6wD6tR4AzkYEeA5iyg-_u4=',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -245,7 +245,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/1727828/pexels-photo-1727828.jpeg',
+      'https://www.shutterstock.com/image-photo/broken-traffic-light-signals-showing-600nw-2387991893.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -269,7 +269,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/5695699/pexels-photo-5695699.jpeg',
+      'https://media.istockphoto.com/id/538686713/photo/cracked-asphalt-after-earthquake.jpg?s=612x612&w=0&k=20&c=SbzwfmL_xf0rgZ4spkJPZ6wD6tR4AzkYEeA5iyg-_u4=',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -293,7 +293,7 @@ export const mockIssues: Issue[] = [
       },
     },
     photos: [
-      'https://images.pexels.com/photos/691412/pexels-photo-691412.jpeg',
+      'https://5.imimg.com/data5/SELLER/Default/2024/2/382672170/YZ/ZN/AU/2903823/street-light-maintenance-services-500x500.jpg',
     ],
     votes: { upvotes: 0, downvotes: 0 },
     comments: []
@@ -333,14 +333,14 @@ export const statistics = {
 };
 
 export const wardsList = [
-  { id: '1', name: 'Ward 1 - Fort' },
-  { id: '2', name: 'Ward 2 - Bandra' },
-  { id: '3', name: 'Ward 3 - Andheri' },
-  { id: '4', name: 'Ward 4 - Borivali' },
-  { id: '5', name: 'Ward 5 - Dadar' },
-  { id: '6', name: 'Ward 6 - Chembur' },
-  { id: '7', name: 'Ward 7 - Kurla' },
-  { id: '8', name: 'Ward 8 - Mulund' },
+  { id: '1', name: 'Ward 1 ' },
+  { id: '2', name: 'Ward 2 ' },
+  { id: '3', name: 'Ward 3 ' },
+  { id: '4', name: 'Ward 4 ' },
+  { id: '5', name: 'Ward 5 ' },
+  { id: '6', name: 'Ward 6 ' },
+  { id: '7', name: 'Ward 7 ' },
+  { id: '8', name: 'Ward 8 ' },
 ];
 
 export const councilMembers = [

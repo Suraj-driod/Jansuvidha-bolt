@@ -23,7 +23,7 @@ const exampleReports = [
       landmark: "Near Bandra Station",
       coordinates: { lat: 19.0543, lng: 72.8254 }
     },
-    photos: ["https://images.pexels.com/photos/691412/pexels-photo-691412.jpeg"],
+    photos: ["https://5.imimg.com/data5/SELLER/Default/2024/2/382672170/YZ/ZN/AU/2903823/street-light-maintenance-services-500x500.jpg"],
     issueType: "streetlight"
   },
   {
@@ -41,7 +41,7 @@ const exampleReports = [
       landmark: "Near Andheri Market",
       coordinates: { lat: 19.1201, lng: 72.8446 }
     },
-    photos: ["https://images.pexels.com/photos/2369465/pexels-photo-2369465.jpeg"],
+    photos: ["https://bobsbanter.com/wp-content/uploads/2021/11/potholes.jpg"],
     issueType: "pothole"
   },
   {
@@ -59,7 +59,7 @@ const exampleReports = [
       landmark: "Near Goregaon Station",
       coordinates: { lat: 19.1663, lng: 72.8526 }
     },
-    photos: ["https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg"],
+    photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYrC7CRxMm8Y7zW6mWGXAshM6abBM86Mv0A&s"],
     issueType: "drainage"
   }
 ];
