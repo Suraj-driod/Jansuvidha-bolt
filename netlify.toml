@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18" # or 20, depending on your needs
+  NEXT_PRIVATE_TARGET = "server"
+  NEXT_PUBLIC_BASE_PATH = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
