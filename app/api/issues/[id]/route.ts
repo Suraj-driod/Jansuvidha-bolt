@@ -3,9 +3,9 @@ import { store } from '@/lib/store';
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
-  const issue = store.getIssueById(params.id);
+  const issue = store.getIssueById(context.params.id);
   if (!issue) {
     return NextResponse.json({ error: 'Issue not found' }, { status: 404 });
   }
@@ -14,11 +14,11 @@ export async function GET(
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
   try {
     const data = await request.json();
-    const issue = store.updateIssue(params.id, data);
+    const issue = store.updateIssue(context.params.id, data);
     if (!issue) {
       return NextResponse.json({ error: 'Issue not found' }, { status: 404 });
     }
@@ -30,9 +30,9 @@ export async function PUT(
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  context: { params: { id: string } }
 ) {
-  const success = store.deleteIssue(params.id);
+  const success = store.deleteIssue(context.params.id);
   if (!success) {
     return NextResponse.json({ error: 'Issue not found' }, { status: 404 });
   }
