@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, useMap, ZoomControl } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, useMap, ZoomControl, useMapEvent } from "react-leaflet";
 import { Button } from "@/components/ui/button";
 import { MapPin, Maximize, Minimize, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -37,6 +37,11 @@ function MapController({ center }: { center?: [number, number] }) {
     }, 100);
   }, [center, map]);
   
+  return null;
+}
+
+function MapClickHandler({ onClick }: { onClick: (e: L.LeafletMouseEvent) => void }) {
+  useMapEvent('click', onClick);
   return null;
 }
 
@@ -112,9 +117,9 @@ export default function LocationMap({ onLocationSelect, initialLocation }: Locat
       center={selectedLocation || initialLocation || defaultLocation}
       zoom={13}
       className={`h-full w-full ${expanded ? 'rounded-lg' : ''}`}
-      onClick={handleMapClick}
       {...mapOptions}
     >
+      <MapClickHandler onClick={handleMapClick} />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
