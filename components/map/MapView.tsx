@@ -6,7 +6,6 @@ import { Filter, MapPin, Plus, Minus, Maximize, Loader2 } from "lucide-react";
 import { mockIssues } from "@/lib/mock-data";
 import dynamic from "next/dynamic";
 import { toast } from "sonner";
-import { useMapEvent } from "react-leaflet";
 
 declare let L: any;
 
@@ -59,11 +58,6 @@ const demoIssues = [
 const getRandomOffset = () => {
   return (Math.random() - 0.5) * 0.02;
 };
-
-function MapClickHandler({ onClick }: { onClick: (e: any) => void }) {
-  useMapEvent('click', onClick);
-  return null;
-}
 
 const MapView = () => {
   const [selectedIssue, setSelectedIssue] = useState<string | null>(null);
@@ -245,11 +239,11 @@ const MapView = () => {
         zoom={13}
         style={{ height: "100%", width: "100%" }}
         ref={setMap}
+        onClick={handleMapClick}
       >
-        <MapClickHandler onClick={handleMapClick} />
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         
         {leafletLoaded && mockIssues
